@@ -1,0 +1,106 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #0c2c47;
+  --secondary-clr: #e4f2ea;
+  --black: #333;
+  --white: #fff;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+.layout{
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header{
+  color: var(--primary-clr);
+}
+
+.date{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.changelog-item{
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 5rem;
+  padding-bottom: 3rem;
+}
+
+.timeline{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  left: 17.5%;
+}
+
+.timeline-circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: var(--primary-clr);
+}
+
+.timeline-line{
+  width: 2px;
+  height: 86%;
+  background-color: var(--primary-clr);
+}
+
+.timeline-circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: var(--primary-clr);
+}
+
+.changelog-content-con{
+  padding: 1rem 1.5rem;
+  background-color: var(--secondary-clr);
+  border-radius: 10px;
+}
+
+.changelog-title{
+  font-size: .875rem;
+  font-weight: 700;
+  color: var(--primary-clr);
+  margin-bottom: 1rem;
+}
+
+.changelog-contents{
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  gap: .475rem;
+}
