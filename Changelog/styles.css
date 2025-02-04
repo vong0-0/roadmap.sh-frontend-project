@@ -20,6 +20,7 @@
   --secondary-clr: #e4f2ea;
   --black: #333;
   --white: #fff;
+  --red: #ad525e;
   --font-family: 'Roboto';
 }
 
@@ -41,14 +42,13 @@ body{
 }
 
 .date{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  display: none;
 }
 
 .changelog-item{
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: start;
   gap: 5rem;
   padding-bottom: 3rem;
@@ -56,7 +56,7 @@ body{
 
 .timeline{
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 30px;
@@ -85,22 +85,53 @@ body{
 }
 
 .changelog-content-con{
+  max-width: 430px;
   padding: 1rem 1.5rem;
   background-color: var(--secondary-clr);
   border-radius: 10px;
 }
 
 .changelog-title{
+  display: flex;
+  gap: .5rem;
   font-size: .875rem;
   font-weight: 700;
   color: var(--primary-clr);
   margin-bottom: 1rem;
 }
 
+.changelog-title .date{
+  display: block;
+  color: var(--red);
+  font-weight: 400;
+}
 .changelog-contents{
-  max-width: 700px;
   display: flex;
   flex-direction: column;
   padding-left: 2rem;
   gap: .475rem;
+}
+
+@media screen and (min-width: 992px){
+  .changelogs{
+    display: block;
+  }
+  .timeline{
+    display: flex;
+  }
+  .date{
+    display: block;
+  }
+  .changelog-title .date{
+    display: none;
+  }
+  .changelog-item{
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .changelog-content-con{
+    max-width: 700px;
+  }
 }
