@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Form UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <section class="accessible-form-section">
+      <form class="accessible-form" action="">
+        <div class="form-group">
+          <label for="full-name" class="form-label">Full Name</label>
+          <input type="text" id="full-name" name="fullName" placeholder="What should we call you?" aria-required="true" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" value="example@gmail.com" aria-invalid="true" aria-required="true" required>
+          <div class="error-message" aria-live="assertive">Email is aleady taken</div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="password" placeholder="xxxxxxxx" aria-required="true" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password" class="form-label">Confirm password</label>
+          <input type="password" id="confirm-password" name="confirmPassword" placeholder="xxxxxxxx" aria-required="true" required>
+        </div>
+        <div class="form-group btn">
+          <button class="submit-btn">Update Profile</button>
+        </div>
+      </form>
+      <div class="profile-complreteness">
+        <div class="progress-con">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="progress-percentage">67%</div>
+        </div>
+        <div class="checklist-con">
+          <ul class="check-list">
+            <li class="list check">Create Account</li>
+            <li class="list check">Update Roadmap Progress</li>
+            <li class="list check">Setup Public Profile</li>
+            <li class="list">Complete Your First Project</li>
+            <li class="list">Invite Your Friend</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

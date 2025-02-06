@@ -1,0 +1,187 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #687a92;
+  --secondary-clr: #84572f;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.accessible-form-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+
+.accessible-form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label{
+  font-size: 14px;
+  margin-bottom: .5rem;
+}
+
+.form-group input{
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  padding: 1rem .5rem;
+  transition: .25s;
+}
+
+.form-group input[aria-invalid="true"]{
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.form-group input:focus-visible{
+  outline: none;
+  border-color: var(--secondary-clr);
+  box-shadow: 0 0 4px 0px var(--black);
+}
+
+.error-message{
+  margin-top: .5rem;
+  color: var(--red);
+  font-size: 13px;
+}
+
+.submit-btn{
+  padding: 1.25rem 2.5rem;
+  background-color: var(--primary-clr);
+  border: 2px solid var(--primary-clr);
+  border-radius: 10px;
+  color: var(--white);
+  box-shadow: 0 0 7px var(--black);
+  transition: .5s;
+}
+
+.profile-complreteness{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.progress-con{
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.progress-bar{
+  position: relative;
+  flex: 2;
+  height: 13px;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 67%;
+  height: 100%;
+  background-color: var(--secondary-clr);
+}
+
+.progress-percentage{
+  font-weight: 700;
+}
+
+.checklist-con{
+  padding: 1rem 2rem;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+
+.check-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list{
+  font-weight: 500;
+}
+
+.list.check{
+  color: rgba(0, 0, 0, .5);
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 768px) {
+  .accessible-form-section{
+    max-width: 580px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .accessible-form-section{
+    max-width: 600px;
+    padding: 1rem 2rem;
+    border: 1px solid #333;
+    border-radius: 20px;
+  }
+
+  .form-group input:focus-visible{
+    outline: none;
+    border-color: var(--secondary-clr);
+    box-shadow: 0 3px 0px var(--secondary-clr);
+    transform: translateY(-3px);
+  }
+
+  .form-group.btn{
+    display: flex;
+    align-items: start;
+  }
+  
+  .submit-btn:hover{
+    color: var(--black);
+    background-color: transparent;
+    box-shadow: 0px 5px 0px var(--primary-clr);
+    transform: translateY(-3px);
+  }
+}
