@@ -1,0 +1,89 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #687a92;
+  --secondary-clr: #84572f;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.page-wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-container{
+  width: 650px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+.tabs{
+  display: flex;
+}
+
+.tab{
+  position: relative;
+  color: rgba(0, 0, 0, .5);
+  font-weight: 700;
+  padding: 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.tab::before{
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--black);
+  transition: .5s;
+}
+
+.tab:hover::before{
+  width: 100%;
+}
+
+.tab.active{
+  color: var(--black);
+}
+
+.tab.active::before{
+  width: 100%;
+}
