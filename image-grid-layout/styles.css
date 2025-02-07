@@ -1,0 +1,92 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #687a92;
+  --secondary-clr: #84572f;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-wrapper{
+  padding: 2rem 0;
+}
+
+.grid-container{
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container{
+    max-width: 878px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .grid-container img:nth-child(1){
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .grid-container img:nth-child(2){
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  .grid-container img:nth-child(3){
+    grid-area: 1 / 3 / 3 / 4;
+  }
+
+  .grid-container img:nth-child(4){
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .grid-container img:nth-child(5){
+    grid-area: 2 / 2 / 4 / 3;
+  }
+
+  .grid-container img:nth-child(6){
+    grid-area: 3 / 3 / 4 / 4;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .grid-container{
+    max-width: 1150px;
+  }
+
+  .grid-container > img{
+    border: 2px solid #333;
+  }
+}
