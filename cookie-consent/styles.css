@@ -1,0 +1,84 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #0c2c47;
+  --secondary-clr: #e4f2ea;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+.page-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.cookie-popup{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  height: 280px;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  background-color: #a0a0a0;
+  color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+}
+
+.close-icon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.cookie-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.cookie-message{
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.cookie-consent-btn{
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.cookie-consent-btn:hover{
+  border-color: #333;
+  background-color: #333;
+  color: #fff;
+}
