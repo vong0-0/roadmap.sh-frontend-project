@@ -1,0 +1,104 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #687a92;
+  --secondary-clr: #84572f;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.page-wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar{
+  border-radius: 10px;
+  border: 2px solid #333;
+  padding: 1rem 2rem;
+}
+
+.nav-links{
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link{
+  position: relative;
+}
+
+.nav-link:hover .tooltip{
+  display: block;
+}
+
+.nav-link > p{
+  cursor: pointer;
+}
+
+.tooltip{
+  display: none;
+  position: absolute;
+  max-width: 300px;
+  width: max-content;
+  position: absolute;
+  left: 50%;
+  top: -350%;
+  transform: translateX(-50%);
+  animation: fadeIn .5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+
+.tooltip-content{
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.tooltip::before{
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: #333;
+  bottom: -41%;
+  left: 50%;
+  transform: translateX(-50%);
+}
