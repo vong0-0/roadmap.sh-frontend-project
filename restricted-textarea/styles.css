@@ -1,0 +1,45 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #687a92;
+  --secondary-clr: #84572f;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-title{
+  margin-bottom: 2rem;
+}
