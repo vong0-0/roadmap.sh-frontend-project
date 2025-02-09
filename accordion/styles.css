@@ -1,0 +1,112 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #0c2c47;
+  --secondary-clr: #e4f2ea;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.page-wrapper{
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title{
+  margin-bottom: 2rem;
+}
+
+.accordions{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  max-width: 650px;
+  width: 100%;
+}
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.accordion.expanded{
+  max-height: 300px;
+}
+
+.accordion-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--black);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+
+.accordion-label{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.accordion-toggle-icon{
+  width: 15px;
+  height: 15px;
+  transform: rotate(270deg);
+  transition: .5s;
+}
+
+.accordion.expanded .accordion-toggle-icon{
+  transform: rotate(180deg);
+}
+
+.accordion-content{
+  max-height: 0;
+  color: #fff;
+  background-color: var(--black);
+  border-radius: 15px;
+  transition: .5s;
+}
+
+.accordion.expanded .accordion-content{
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.accordion-content p{
+  padding: 1rem;
+}

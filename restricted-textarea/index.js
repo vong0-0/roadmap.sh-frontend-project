@@ -13,7 +13,7 @@ function createTextBoxElement(container, maxLength = 255){
             textBox.classList.add('limited');
         }
         else{
-           textBox.classList.remove('limited'); 
+           textBox.classList.remove('limited');
         }
         charCounter.innerHTML = `${textArea.value.length} / ${maxLength}`;
     });
@@ -28,7 +28,7 @@ function createTextBoxElement(container, maxLength = 255){
 }
 
 function renderTextBox(){
-    createTextBoxElement(textBoxContainer);
+    createTextBoxElement(textBoxContainer, 6);
     createTextBoxElement(textBoxContainer);
     createTextBoxElement(textBoxContainer);
 }

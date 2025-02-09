@@ -20,7 +20,7 @@
   --secondary-clr: #84572f;
   --black: #333;
   --white: #fff;
-  --red: #ad525e;
+  --red: #b82c3f;
   --font-family: 'Roboto';
 }
 
@@ -60,15 +60,15 @@ body{
 }
 
 .text-box.limited{
-  border-color: red;
+  border-color: var(--red);
 }
 
 .text-box.limited > *{
-  color: red;
+  color: var(--red);
 }
 
 .text-box.limited:focus-within {
-  border-color: red;
+  border-color: var(--red);
 }
 
 .message-input{
