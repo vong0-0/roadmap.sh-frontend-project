@@ -26,9 +26,13 @@ function createDropdown(container){
 
   dropdownItems.forEach(item => {
     const dropdownItem = document.createElement('li');
+    const checkMark = document.createElement('span');
     dropdownItem.setAttribute('class', 'dropdown-item');
     dropdownItem.innerText = item;
     dropdownList.appendChild(dropdownItem);
+    checkMark.setAttribute('class', 'check-mark')
+    checkMark.innerHTML = '&#x2713';
+    dropdownItem.append(checkMark)
 
     dropdownItem.addEventListener('click', () => {
       document.querySelectorAll('.dropdown-item').forEach(el => el.classList.remove('active'));

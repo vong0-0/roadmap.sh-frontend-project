@@ -86,14 +86,36 @@ button{
 }
 
 .dropdown-item{
+  display: flex;
+  justify-content: space-between;
   padding: 1rem 2rem;
   border: 1px solid #333;
   border-bottom: none;
   cursor: pointer;
+  transition: .2s;
 }
 
 .dropdown-item:last-child{
   border-bottom: 1px solid #333;
+}
+
+.dropdown-item:hover{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.check-mark{
+  display: none;
+  width: 19px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: var(--black);
+  color: white;
+}
+
+.dropdown-item.active .check-mark{
+  display: flex;
 }
 
 .btn{
