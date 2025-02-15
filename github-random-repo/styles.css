@@ -1,0 +1,132 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #687a92;
+  --secondary-clr: #84572f;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+  --transition-duration: .5s;
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+ul{
+  list-style-type: none;
+}
+
+.page-wrapper{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title{
+  text-align: center;
+  width: 90%;
+  font-size: 2.5rem;
+  color: #b57b66;
+  margin-bottom: 4rem;
+}
+
+.repo-finder{
+  max-width: 500px;
+  width: 90%;
+}
+
+#languages-selector{
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem .5rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border: 2px solid var(--black);
+}
+
+#languages-selector:focus-visible{
+  outline: none;
+  border-color: #b6410f;
+}
+
+.repo-details{
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #104c64;
+  color: var(--white);
+  transition: var(--transition-duration);
+}
+
+.repo-name{
+  font-size: 1.875rem;
+  color: #e86659;
+}
+
+.repo-description{
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, .8);
+}
+
+.repo-status{
+  color: #fcdd9d;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.repo-language{
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+}
+
+.circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--red);
+}
+
+@media screen and (min-width: 768px) {
+  .repo-details{
+    padding: 1.5rem;
+  }
+
+  .repo-description{
+    padding: 1.25rem 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #languages-selector{
+    transition: var(--transition-duration);
+  }
+
+  .repo-details:hover{
+    box-shadow: 0 10px 0 #504e76;
+    transform: translateY(-10px);
+  }
+}
