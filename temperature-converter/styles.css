@@ -1,0 +1,106 @@
+/*
+  Copyright 2011 The Roboto Project Authors
+  Licensed under the SIL Open Font License, Version 1.1
+  https://openfontlicense.org
+*/
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root{
+  --primary-clr: #0c2c47;
+  --secondary-clr: #e4f2ea;
+  --black: #333;
+  --white: #fff;
+  --red: #ad525e;
+  --font-family: 'Roboto';
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.page-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp-converter{
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  border: 2px solid var(--black);
+}
+
+.title{
+  margin-bottom: 1.5rem;
+}
+
+.description{
+  color: rgba(0, 0, 0, .5);
+}
+
+.input-group{
+  display: flex;
+  gap: 1rem;
+  margin: .875rem 0;
+}
+
+.temp-value{
+  max-width: 70px;
+  padding: .4rem .8rem;
+}
+
+#from-unit-dropdown, #to-unit-dropdown{
+  padding: .3rem .6rem;
+}
+
+.convert-btn{
+  padding: .4rem .8rem;
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  transition: .25s;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.convert-btn.disable{
+  opacity: .4;
+  cursor: auto;
+}
+
+.result{
+  height: 19px;
+  color: #556e31;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .convert-btn:hover{
+    background-color: transparent;
+    color: var(--black);
+  }
+}
