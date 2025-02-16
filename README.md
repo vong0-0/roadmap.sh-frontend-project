@@ -16,3 +16,4 @@ This repository contains various frontend projects as part of my learning journe
 - [Flash Cards](https://roadmap.sh/projects/flash-cards)
 - [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown)
 - [Task Tracker](https://roadmap.sh/projects/task-tracker-js)
+- [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo)
