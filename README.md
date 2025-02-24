@@ -18,3 +18,4 @@ This repository contains various frontend projects as part of my learning journe
 - [Task Tracker](https://roadmap.sh/projects/task-tracker-js)
 - [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo)
 - [Temperature Converter](https://roadmap.sh/projects/temperature-converter)
+- [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer)
