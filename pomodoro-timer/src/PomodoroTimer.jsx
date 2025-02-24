@@ -24,7 +24,7 @@ export default function PomodoroTimer(){
   const [isStarted, setIsStarted] = useState(false);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [sessions, setSessions] = useState([
-    { name: "Focus", duration: 3 },
+    { name: "Focus", duration: 25 * 60 },
     { name: "Short Break", duration: 5 * 60 },
     { name: "Long Break", duration: 15 * 60 },
   ]);
