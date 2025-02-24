@@ -112,7 +112,7 @@ export default function PomodoroTimer(){
           role="button"
           onClick={toggleConfigDurationForm}
         >
-          <img className="w-5 h-5 sm:w-6 sm:h-6" src="../src/assets/icons/sliders-solid.svg" alt="Slider" aria-hidden={true} />
+          <img className="w-5 h-5 sm:w-6 sm:h-6" src="icons/sliders-solid.svg" alt="Slider" aria-hidden={true} />
         </button>
         <TimerConfig
           isFormOpen={isConfigFormOpen}
@@ -122,6 +122,8 @@ export default function PomodoroTimer(){
           longBreakDuration={sessions[2].duration}
           onToggleForm={toggleConfigDurationForm}
           setSessions={setSessions}
+          setIsStarted={setIsStarted}
+          setIsTimerRunning={setIsTimerRunning}
         />
         <audio ref={audioRef} src="../src/assets/audio/cell-phone-ring-tone-rock-n-roll.wav" aria-hidden={true} />
         <div className="max-w-[28rem] w-11/12 flex flex-col items-center">

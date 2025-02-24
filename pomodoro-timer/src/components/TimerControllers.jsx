@@ -51,7 +51,7 @@ export default function TimerControllers({
               tabIndex={4}
               onClick={() => handleStartNewSession(0)}
             >
-              <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/arrow-rotate-right-solid.svg" alt="" aria-hidden="true" />
+              <img className="w-4 h-4 sm:hidden" src="icons/arrow-rotate-right-solid.svg" alt="" aria-hidden="true" />
               <span className="hidden sm:block">Restart focus</span>
             </button>
             <button
@@ -61,7 +61,7 @@ export default function TimerControllers({
               tabIndex={5}
               onClick={() => handleStartNewSession(1)}
             >
-              <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/mug-saucer-solid.svg" alt="" aria-hidden="true" />
+              <img className="w-4 h-4 sm:hidden" src="icons/mug-saucer-solid.svg" alt="" aria-hidden="true" />
               <span className="hidden sm:block">Short break</span>
             </button>
             {focusCompletedCount % 4 === 0 &&
@@ -72,7 +72,7 @@ export default function TimerControllers({
                 tabIndex={6}
                 onClick={() => handleStartNewSession(2)}
               >
-                <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/utensils-solid.svg" alt="" aria-hidden="true" />
+                <img className="w-4 h-4 sm:hidden" src="icons/utensils-solid.svg" alt="" aria-hidden="true" />
                 <span className="hidden sm:block">Long break</span>
               </button>
             }
@@ -86,7 +86,7 @@ export default function TimerControllers({
               tabIndex={4}
               onClick={handleToggleTimer}
             >
-              <img className="w-4 h-4 sm:hidden" src={`../src/assets/icons/${isTimerRunning ? "pause-solid.svg" : "play-solid.svg"}`} alt="" aria-hidden="true" />
+              <img className="w-4 h-4 sm:hidden" src={`icons/${isTimerRunning ? "pause-solid.svg" : "play-solid.svg"}`} alt="" aria-hidden="true" />
               <span className="hidden sm:block">{isTimerRunning ? "Pause" : "Resume"}</span>
             </button>
             <button
@@ -96,7 +96,7 @@ export default function TimerControllers({
               tabIndex={5}
               onClick={handleResetTimer}
             >
-              <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/arrow-rotate-right-solid.svg" alt="" aria-hidden="true" />
+              <img className="w-4 h-4 sm:hidden" src="icons/arrow-rotate-right-solid.svg" alt="" aria-hidden="true" />
               <span className="hidden sm:block">Reset</span>
             </button>
           </>
@@ -108,7 +108,7 @@ export default function TimerControllers({
           tabIndex={4}
           onClick={handleStartTimer}
         >
-          <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/play-solid.svg" alt="" aria-hidden="true" />
+          <img className="w-4 h-4 sm:hidden" src="icons/play-solid.svg" alt="" aria-hidden="true" />
           <span className="hidden sm:block">Start</span>
         </button>
       }

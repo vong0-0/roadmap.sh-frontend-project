@@ -32,7 +32,7 @@ export default function SessionSelector({
         tabIndex={1}
         onClick={() => changeSession(0)}
       >
-        <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/keyboard-regular.svg" alt="" aria-hidden={true} />
+        <img className="w-4 h-4 sm:hidden" src="icons/keyboard-regular.svg" alt="" aria-hidden={true} />
         <span className="hidden sm:block">Focus</span>
       </button>
       <button
@@ -42,7 +42,7 @@ export default function SessionSelector({
         tabIndex={2}
         onClick={() => changeSession(1)}
       >
-        <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/mug-saucer-solid.svg" alt="" aria-hidden={true} />
+        <img className="w-4 h-4 sm:hidden" src="icons/mug-saucer-solid.svg" alt="" aria-hidden={true} />
         <span className="hidden sm:block">Short break</span>
       </button>
       <button
@@ -52,7 +52,7 @@ export default function SessionSelector({
         tabIndex={3}
         onClick={() => changeSession(2)}
       >
-        <img className="w-4 h-4 sm:hidden" src="../src/assets/icons/utensils-solid.svg" alt="" aria-hidden={true} />
+        <img className="w-4 h-4 sm:hidden" src="icons/utensils-solid.svg" alt="" aria-hidden={true} />
         <span className="hidden sm:block">Long break</span>
       </button>
     </div>

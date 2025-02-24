@@ -8,6 +8,8 @@ export default function TimerConfig({
   longBreakDuration,
   onToggleForm,
   setSessions,
+  setIsStarted,
+  setIsTimerRunning
 }){
   if(!isFormOpen) return null;
   const [focusDurationInput, setFocusDurationInput] = useState(focusDuration);
@@ -48,6 +50,8 @@ export default function TimerConfig({
       { ...sessions[1], duration: shortBreakDurationInput },
       { ...sessions[2], duration: longBreakDurationInput },
     ]);
+    setIsStarted(false);
+    setIsTimerRunning(false);
     onToggleForm();
   }
 
@@ -66,7 +70,7 @@ export default function TimerConfig({
             role="button"
             onClick={handleClose}
           >
-            <img className="w-5 h-5 sm:w-6 sm:h-6" src="../src/assets/icons/xmark-solid.svg" alt="xmark" aria-hidden={true} />
+            <img className="w-5 h-5 sm:w-6 sm:h-6" src="icons/xmark-solid.svg" alt="xmark" aria-hidden={true} />
           </button>
           <div className="input-group col-span-2">
             <label htmlFor="configFocusDuration" className="text-zinc-400 text-xs sm:text-base">Pomodoro duration(minutes)</label>
