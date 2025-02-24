@@ -24,7 +24,7 @@ export default function PomodoroTimer(){
   const [isStarted, setIsStarted] = useState(false);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [sessions, setSessions] = useState([
-    { name: "Focus", duration: 25 * 60 },
+    { name: "Focus", duration: 3 },
     { name: "Short Break", duration: 5 * 60 },
     { name: "Long Break", duration: 15 * 60 },
   ]);
@@ -125,7 +125,7 @@ export default function PomodoroTimer(){
           setIsStarted={setIsStarted}
           setIsTimerRunning={setIsTimerRunning}
         />
-        <audio ref={audioRef} src="../src/assets/audio/cell-phone-ring-tone-rock-n-roll.wav" aria-hidden={true} />
+        <audio ref={audioRef} src="audio/cell-phone-ring-tone-rock-n-roll.wav" aria-hidden={true} />
         <div className="max-w-[28rem] w-11/12 flex flex-col items-center">
           <SessionSelector
             audioRef={audioRef}
