@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../src/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+  --font-family: "Montserrat", "sans-serif";
+  --white-clr: #fff;
+  --black-clr: #333;
+  --transition-duration: .3s;
+}
+
+@layer base{
+  body{
+    font-family: var(--font-family);
+    color: var(--white-clr);
+  }
+  /* Hide arrows from input Number for Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hide arrows from input Number for Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+@layer components{
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--black-clr);
+  }
+  .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .input-group input[type="number"]{
+    outline: none;
+  }
+
+  @media screen and (min-width: 640px){
+    .input-group input[type="number"]:focus-visible{
+      outline: #fff solid 1px;
+    }
+  }
+}
