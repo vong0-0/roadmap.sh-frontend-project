@@ -1,8 +1,18 @@
-# React + Vite
+# Get Start
+## 1. Clone the repository
+```
+git clone https://github.com/your-username/roadmap.sh-frontend-project.git
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+cd roadmap.sh-frontend-project/pomodoro-timer
+```
+## 2. Install dependencies
+```
+npm install
+```
+## 3. Run the app locally
+```
+npm run dev
+```
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+Check out the deployed app [here](https://pomodoro-timer-8ljoltav6-vongs-projects-98eafa8a.vercel.app) 🚀
