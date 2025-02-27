@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: "Inter";
+  src: url('../src/assets/fonts/Inter.ttf') format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+  --primary: #ffdc01;
+  --black: #121210;
+  --white: #fff;
+  --grey: #afb59d;
+  --green: #2b5b3f;
+  --red: #b20808;
+  --transition-duration: .3s;
+  --font-family: 'Inter', 'sans-serit';
+}
+
+@layer base{
+  body{
+    font-family: var(--font-family);
+  }
+}
+
+@layer components{
+  .choice-button{
+    width: 100%;
+    display: block;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    background-color: var(--primary);
+    padding-bottom: .25rem;
+    cursor: pointer;
+    transition: var(--transition-duration);
+  }
+  .choice-button.wrong{
+    background-color: #806350;
+  }
+  .choice-button.correct{
+    background-color: #e99720;
+  }
+  .choice-button.unselected{
+    background-color: #806350;
+  }
+
+  .choice-text{
+    padding: 1rem 2rem;
+    font-weight: 100;
+    text-align: start;
+    border-radius: 1rem;
+    background-color: white;
+    transition: var(--transition-duration);
+  }
+  .wrong .choice-text{
+    background-color: var(--red);
+    color: var(--white);
+  }
+  .correct .choice-text{
+    background-color: var(--green);
+    color: var(--white);
+  }
+  .unselected .choice-text{
+    background-color: var(--grey);
+    color: var(--white);
+  }
+}
