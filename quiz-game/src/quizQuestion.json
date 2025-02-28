@@ -1,8 +1,4 @@
-import { useEffect, useState } from "react";
-import QuizQuestion from "./components/QuizQuestion";
-import FinalScore from "./components/FinalScore";
-
-const quizQuestions = [
+[
   {
     "question": "What type of language is JavaScript?",
     "choices": ["Compiled", "Interpreted", "Assembly", "Machine Code"],
@@ -99,70 +95,3 @@ const quizQuestions = [
     "correct": "Both A and C"
   }
 ]
-
-export default function QuizGame(){
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [isFinished, setIsFinished] = useState(false);
-  const [isTimerActive, setIsTimerActive] = useState(true);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [answeredCount, setAnsweredCount] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [score, setScore] = useState(0);
-  const [remainingTime, setRemainingTime] = useState(1 * 60);
-
-  useEffect(() => {
-    if(!isTimerActive) return;
-    let interval = setInterval(() => {
-      setRemainingTime(prevTime => {
-        if(prevTime <= 0){
-          handleTimeOut();
-          clearInterval(interval)
-          return 0;
-        }
-        else{
-          return prevTime - 1;
-        }
-      })
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [isTimerActive]);
-
-  function handleTimeOut(){
-    setIsTimerActive(false)
-    setIsAnswered(true);
-    setSelectedAnswer(quizQuestions[currentQuestionIndex].correct)
-    score <= 0 ? setScore(0) : setScore(score - 1);
-  }
-
-  return(
-    <main className="py-8 px-4">
-      <section className="py-8" aria-label="Quiz game">
-        <div className="max-w-[700px] w-full mx-auto">
-          {isFinished
-            ? <FinalScore
-                quizQuestions={quizQuestions}
-                score={score}
-              />
-            : <QuizQuestion
-                quizQuestions={quizQuestions}
-                isAnswered={isAnswered}
-                currentQuestionIndex={currentQuestionIndex}
-                answeredCount={answeredCount}
-                selectedAnswer={selectedAnswer}
-                remainingTime={remainingTime}
-                setIsAnswered={setIsAnswered}
-                setIsFinished={setIsFinished}
-                setIsTimerActive={setIsTimerActive}
-                setCurrentQuestionIndex={setCurrentQuestionIndex}
-                setAnsweredCount={setAnsweredCount}
-                setSelectedAnswer={setSelectedAnswer}
-                setScore={setScore}
-                setRemainingTime={setRemainingTime}
-              />
-          }
-        </div>
-      </section>
-    </main>
-  )
-}

@@ -27,7 +27,7 @@
 }
 
 @layer components{
-  .choice-button{
+  .quiz-choice{
     width: 100%;
     display: block;
     border: 1px solid var(--black);
@@ -37,13 +37,13 @@
     cursor: pointer;
     transition: var(--transition-duration);
   }
-  .choice-button.wrong{
+  .quiz-choice.wrong{
     background-color: #806350;
   }
-  .choice-button.correct{
+  .quiz-choice.correct{
     background-color: #e99720;
   }
-  .choice-button.unselected{
+  .quiz-choice.unselected{
     background-color: #806350;
   }
 
