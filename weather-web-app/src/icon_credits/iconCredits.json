@@ -1,0 +1,128 @@
+[
+  {
+    "title": "snowy icons",
+    "imgUrl": "./icons/condition-icons/weather-card-snow.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/snow-fall",
+    "creator": "Superarticons"
+  },
+  {
+    "title": "snow icons",
+    "imgUrl": "./icons/condition-icons/snow.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/snow",
+    "creator": "Freepik"
+  },
+  {
+    "title": "rain icons",
+    "imgUrl": "./icons/condition-icons/weather-card-rain.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/drizzle",
+    "creator": "Freepik"
+  },
+  {
+    "title": "rain icons",
+    "imgUrl": "./icons/condition-icons/rain.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/rain",
+    "creator": "tulpahn"
+  },
+  {
+    "title": "foggy icons",
+    "imgUrl": "./icons/condition-icons/weather-card-fog.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/foggy",
+    "creator": "Freepik"
+  },
+  {
+    "title": "foggy icons",
+    "imgUrl": "./icons/condition-icons/fog.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/foggy",
+    "creator": "Freepik"
+  },
+  {
+    "title": "windy icons",
+    "imgUrl": "./icons/condition-icons/weaher-card-wind.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/windy",
+    "creator": "Vector Squad"
+  },
+  {
+    "title": "seasons icons",
+    "imgUrl": "./icons/condition-icons/wind.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/seasons",
+    "creator": "designvector10"
+  },
+  {
+    "title": "cloudy icons",
+    "imgUrl": "./icons/condition-icons/weather-card-cloudy.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/cloudy",
+    "creator": "Eucalyp"
+  },
+  {
+    "title": "cloud icons",
+    "imgUrl": "./icons/condition-icons/cloudy.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/cloud",
+    "creator": "srip"
+  },
+  {
+    "title": "partly-cloudy icons",
+    "imgUrl": "./icons/condition-icons/weather-card-partly-cloudy-day.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/partly-cloudy",
+    "creator": "Freepik"
+  },
+  {
+    "title": "partly cloudy icons",
+    "imgUrl": "./icons/condition-icons/partly-cloudy-day.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/partly-cloudy",
+    "creator": "Andy Horvath"
+  },
+  {
+    "title": "cloudy icons",
+    "imgUrl": "./icons/condition-icons/weather-card-partly-cloudy-night.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/cloudy",
+    "creator": "Vectors Tank"
+  },
+  {
+    "title": "partly cloudy icons",
+    "imgUrl": "./icons/condition-icons/partly-cloudy-night.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/partly-cloudy",
+    "creator": "Sudowoodo"
+  },
+  {
+    "title": "clear day icons",
+    "imgUrl": "./icons/condition-icons/weather-card-clear-day.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/clear-day",
+    "creator": "Roman Danylyk"
+  },
+  {
+    "title": "clear sky icons",
+    "imgUrl": "./icons/condition-icons/clear-day.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/clear-sky",
+    "creator": "Chanut-is-Industries"
+  },
+  {
+    "title": "clear night icons",
+    "imgUrl": "./icons/condition-icons/weather-card-clear-night.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/clear-night",
+    "creator": "Vector Squad"
+  },
+  {
+    "title": "moonlight icons",
+    "imgUrl": "./icons/condition-icons/clear-night.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/moonlight",
+    "creator": "Pomicon"
+  },
+  {
+    "title": "fall icons",
+    "imgUrl": "./icons/rain-fall.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/cloudy",
+    "creator": "Ridho Imam Prayogi"
+  },
+  {
+    "title": "wind icons",
+    "imgUrl": "./icons/windy.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/cloudy",
+    "creator": "Wissawa Khamsriwath"
+  },
+  {
+    "title": "wind icons",
+    "imgUrl": "./icons/windy.png",
+    "attributionUrl": "https://www.flaticon.com/free-icons/cloudy",
+    "creator": "tulpahn"
+  }
+]

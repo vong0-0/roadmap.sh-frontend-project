@@ -20,3 +20,4 @@ This repository contains various frontend projects as part of my learning journe
 - [Temperature Converter](https://roadmap.sh/projects/temperature-converter)
 - [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer)
 - [Quiz App](https://roadmap.sh/projects/quiz-app)
+- [Weather Web App](https://roadmap.sh/projects/weather-app)
